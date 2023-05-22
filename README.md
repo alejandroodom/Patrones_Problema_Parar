@@ -28,7 +28,8 @@ El patrón Strategy, se utiliza para encapsular diferentes algoritmos de parada,
 Podemos concluir que el problema de parar es un problema fundamental en el campo de la computación. Este demuestra una contradicción, lo cual demuestra que los ordenadores tienen limitaciones. 
 También existen algunas implicaciones de este problema en otros campos de estudio, como la verificación de programas o la seguridad informática. Además es aplicable a la vida real, esto se puede ver en matemáticas (teoría de recursión) o en situaciones cotidianas, como determinar si un algoritmo de búsqueda de rutas encontrará una solución.
 
-
+# Link del repositorio
+https://github.com/alejandroodom/Patrones_Problema_Parar.git
 
 
 
