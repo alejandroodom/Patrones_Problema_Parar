@@ -34,10 +34,10 @@ public class HaltChecker {
 
     public String checkProgram(Program program, Input input) {
         String result = program.run(input);
-        if(stopAlgorithm.shouldStop(input.getNumber())) {
+        if(result.equals("para")) {
             notifyObservers("para");
             return "para";
-        }else if(!(stopAlgorithm.shouldStop(input.getNumber()))) {
+        }else if(result.equals("nunca")) {
             notifyObservers("nunca");
             return "nunca";
         }else{

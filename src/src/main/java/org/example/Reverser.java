@@ -12,19 +12,18 @@ public class Reverser implements HaltObserver{
         String result = haltChecker.checkProgram(program, input);
 
         while (result.equals ("para")) {
-            System.out.println("Se ejecuta");
-            //reverse(program, input);
-            result = haltChecker.checkProgram(program, input);
+            System.out.println("Reverser: Se ejecuta");
+            haltChecker.checkProgram(program, input);
         }
         if (result.equals("nunca")) {
-            System.out.println("Termina");
+            System.out.println("Reverser: Termina");
         }
     }
     public void update(String status) {
         if (status.equals("para")) {
-            System.out.println("El programa se ha detenido");
+            System.out.println("HaltChecker: El programa se ha detenido");
         } else if (status.equals("nunca")) {
-            System.out.println("El programa es infinito");
+            System.out.println("HaltChecker: El programa es infinito");
         }
     }
 }
