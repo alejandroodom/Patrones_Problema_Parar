@@ -20,7 +20,7 @@ Para este programa hemos hecho uso de los patrones "Observer", "Strategy" y "Sin
 
 El patrón Observer se ha utilizado para "conectar" ambas máquinas (Haltchecker y Reverser). HaltChecker actúa como sujeto observado, mientras que Reverser actúa como observador. Haltchecker notifica cuando se produce un cambio de estado. Esto ha sido implementado con uso de la interfaz HaltObserver. 
 
-El patrón Singleton ha sido aplicado a Haltchecker. Este patrón garantiza que una clase tenga una única instancia, proporcionando un punto de acceso global a esa instancia. Así nos aseguramos de que solo haya una única instancia de Haltchecker, para mantener la consistencia y la comunicación con los observadores. Para ello, hemos hecho uso de un método estático getInstance(), que devuelve la instancia de la clase declarada como atributo, y si no se ha creado anteriormente, la crea.
+El patrón Singleton ha sido aplicado a Haltchecker. Este patrón garantiza que una clase tenga una única instancia, proporcionando un punto de acceso global a esa instancia. Así nos aseguramos de que solo haya una única instancia de Haltchecker, para mantener la consistencia y la comunicación con los observadores. Para ello, hemos hecho uso de un método estático getInstance(), que devuelve la instancia de la clase, declarada como atributo, y si no se ha creado anteriormente, la crea.
 
 El patrón Strategy, se utiliza para encapsular diferentes algoritmos de parada, mediante la interfaz StopAlgorithm, aunque no he sabido implementarlo correctamente en Haltchecker.
 
